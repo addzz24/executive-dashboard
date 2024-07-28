@@ -1,0 +1,83 @@
+    /* You can add global styles to this file, and also import other style files */
+    @import './variables';
+    @import './mixins';
+    @import 'bootstrap/scss/bootstrap';
+
+    @font-face {
+        font-family: 'Figtree';
+        src: url('../assets/Figtree-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        word-spacing: 1cm;
+    }
+
+    /** Default scss for layout */
+    html,
+    body {
+        font-family: 'Figtree';
+        background-color: $default-bg;
+
+        &::-webkit-scrollbar {
+            height: 0.5em; /* height of horizontal scrollbar ← You're missing this */
+            width: 0.5em; /* width of vertical scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px $card-background;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color:  #42abc557;;
+        }
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+
+    /** Font Sizes */
+    .font-nav {
+        @include font-styles(600, 2em); // nav bar text : Executive Dashboard
+    }
+
+    .font-45{
+        @include font-styles(bolder, 4em); // card main percentage : 230, 9.86
+    }
+
+    .font-35{
+        @include font-styles(normal, 2rem); // card main content  : 25%
+    }
+
+    .font-15{
+        @include font-styles(normal, 10px); // card main content   : Past 30 Days
+    }
+
+
+    /** Custom Classes */
+    .default-bg{
+        background-color: $default-bg; // Default gray bg color
+    }
+
+
+    //Gaps
+    .g-2{
+        gap: 2rem !important;
+    }
+
+
+    //heights
+    .h-2{
+        height: 4rem !important;
+    }
+
+    // Radious
+    .b-card-radious{
+        border-radius: 8px !important;
+    }

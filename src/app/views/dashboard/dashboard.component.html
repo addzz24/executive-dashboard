@@ -1,0 +1,101 @@
+<div class="w-100 m-0 p-0 mt-3">
+    <!-- Date Range -->
+    <div class="row">
+        <div class="col-md-4 px-5">
+            <div class="date-range-box bg-white px-3 py-1 d-flex flex-column" (click)="openSelectDateRange()">
+                <span class="date-box-t1">Auto Date Range</span>
+                <span class="date-box-t2 d-flex align-items-center gap-2">
+                    <img src="../../../assets/icons/calendar-event.svg"> 
+                    <div>This Month</div>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stat Matric-->
+    <div class="row px-5 mt-3 d-flex g-2">
+        <div class="col-md-3 stat-container bg-white ">
+            <div class="stat-card-header m-3">
+                <label>New Wins</label>
+            </div>
+            <div class="stat-card-body d-flex flex-column justify-content-center align-items-center">
+                <label class="body-stat-value">203</label>
+                <label class="body-percentage">
+                    <img src="../../../assets/icons/arrow-up.svg"> 25%
+                </label>
+                <label class="body-label">vs prev 30 days</label>
+            </div>
+        </div>
+        <div class="col-md-3 stat-container bg-white">
+            <div class="stat-card-header m-3">
+                <label>Trial Win Rate</label>
+            </div>
+            <div class="stat-card-body d-flex flex-column justify-content-center align-items-center">
+                <label class="body-stat-value">
+                    9.86 
+                </label>
+                <span class="per">%</span>
+                <label class="body-percentage">
+                    <img src="../../../assets/icons/arrow-up.svg" class="per"> 25%
+                </label>
+                <label class="body-label">vs prev 30 days</label>
+            </div>
+        </div>
+        <div class="col-md-3 stat-container bg-white">
+            <div class="stat-card-header m-3">
+                <label>New MRR</label>
+            </div>
+            <div class="stat-card-body d-flex flex-column justify-content-center align-items-center">
+                <label class="body-stat-value">25.690</label>
+                <label class="body-percentage">
+                    <img src="../../../assets/icons/arrow-up.svg"> 8.7%
+                </label>
+                <label class="body-label">vs prev 30 days</label>
+            </div>
+        </div>
+        <div class="col-md-3 stat-container bg-white">
+            <div class="stat-card-header m-3">
+                <label>Page Views</label>
+            </div>
+            <div class="stat-card-body d-flex flex-column justify-content-center align-items-center">
+                <app-doughnut-chart [doughData]="this.doughData"></app-doughnut-chart>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stat Charts-->
+    <div class="row px-5 mt-3 mb-5 d-flex g-2 ">
+        <div class="col-md-6 chart-container bg-white">
+            <div class="char-card-header m-3">
+                <label>MRR Stats By Country</label>
+                <app-bubble-chart [bubbleData]="this.bubbleData"></app-bubble-chart>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="legend-containe mx-0 px-0 d-flex align-items-center">
+                    <div class="col country mx-0 px-0 d-flex align-items-center">
+                    <span class="circle-b"></span>
+                    <label>United States</label>
+                    </div>
+                    <div class="col country mx-0 px-0 d-flex align-items-center">
+                    <span class="circle-b"></span>
+                    <label>Australia</label>
+                    </div>
+                    <div class="col country mx-0 px-0 d-flex align-items-center">
+                    <span class="circle-b"></span>
+                    <label>Canada</label>
+                    </div>
+                    <div class="col country mx-0 px-0 d-flex align-items-center">
+                    <span class="circle-b"></span>
+                    <label>United Kingdom</label>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-6 chart-container bg-white">
+            <div class="char-card-header m-3">
+                <label>MRR</label>
+            </div>
+            <app-stack-group-chart [stackData]="this.stackData"></app-stack-group-chart>
+        </div>
+    </div>
+</div>

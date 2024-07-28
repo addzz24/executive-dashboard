@@ -1,0 +1,93 @@
+@import '../../../scss/styles.scss';
+
+
+.date-range-box{
+    height: 3.6em !important;
+    width: 31rem !important;
+    border-radius: 8px !important;
+    margin-left: 0.4em;
+    .date-box-t1{
+        font-size: 15px;
+        font-weight: 600;
+        color: $gray-1;
+    }
+
+    .date-box-t2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.stat-container{
+    height: 20rem !important;
+    width: 330px !important;
+    border-radius: 1rem !important;
+
+    .stat-card-header{
+        font-size: 1.5em;
+        font-weight: 600;
+        color: $gray-1;
+    }
+
+    .stat-card-body{
+        .body-stat-value{
+            color: $text-color;
+            @extend .font-45;
+
+            .per{
+                font-size: 28px;
+                font-weight: bolder;
+            }
+        }
+
+        .body-percentage{
+            color: $primary-color;
+            @extend .font-35;
+            img{
+                height: 25px;
+                width: 35px;
+                margin-bottom: 4px;
+            }
+        }
+
+        .body-label{
+            font-size: 10px;
+            color: $gray-1;
+        }
+    }
+}
+
+
+.chart-container{
+    height: 40rem !important;
+    width: 692px !important;
+    border-radius: 1rem !important;
+
+    .char-card-header{
+        font-size: 1.5em;
+        font-weight: 600;
+        color: $gray-1;
+    }
+
+    
+/* Styles for the legend container to ensure it's below the chart */
+.legend-containe {
+    text-align: center;
+    width: 34vw;
+  }
+  
+  .country {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .circle-b {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #b8cce8; /* Default color, adjust as needed */
+    margin-right: 0.5rem;
+  }
+}
+
