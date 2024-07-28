@@ -4,11 +4,7 @@ This Executive Dashboard is designed to provide rich and interactive data visual
 
 ## Project Structure
 
-app
- ├── components # Common reusable components
- ├── models # TypeScript interfaces and types for strict type checking
- ├── services # Services for data
- └── views # Parent components like container and dashboard
+![alt text](image-2.png)
 
 
 
@@ -21,7 +17,8 @@ app
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+- The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
