@@ -35,8 +35,16 @@
             @extend .font-45;
 
             .per{
+                position: absolute;
                 font-size: 28px;
                 font-weight: bolder;
+                margin-top: 14px;
+            }
+
+            .dol{
+                position: relative;
+                margin-bottom: 39px;
+                width: 32px;
             }
         }
 

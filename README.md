@@ -5,10 +5,10 @@ This Executive Dashboard is designed to provide rich and interactive data visual
 ## Project Structure
 
 app
-├── components # Common reusable components
-├── models # TypeScript interfaces and types for strict type checking
-├── services # Services for data
-└── views # Parent components like container and dashboard
+ ├── components # Common reusable components
+ ├── models # TypeScript interfaces and types for strict type checking
+ ├── services # Services for data
+ └── views # Parent components like container and dashboard
 
 
 
@@ -25,7 +25,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. 
+You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
