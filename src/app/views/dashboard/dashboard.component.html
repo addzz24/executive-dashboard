@@ -2,7 +2,7 @@
     <!-- Date Range -->
     <div class="row">
         <div class="col-md-4 px-5">
-            <div class="date-range-box bg-white px-3 py-1 d-flex flex-column" (click)="openSelectDateRange()">
+            <div class="date-range-box bg-white px-3 py-1 d-flex flex-column shadow-sm" (click)="openSelectDateRange()">
                 <span class="date-box-t1">Auto Date Range</span>
                 <span class="date-box-t2 d-flex align-items-center gap-2">
                     <img src="../../../assets/icons/calendar-event.svg"> 
@@ -14,7 +14,7 @@
 
     <!-- Stat Matric-->
     <div class="row px-5 mt-3 d-flex g-2">
-        <div class="col-md-3 stat-container bg-white ">
+        <div class="col-md-3 stat-container bg-white shadow-sm">
             <div class="stat-card-header m-3">
                 <label>New Wins</label>
             </div>
@@ -26,7 +26,7 @@
                 <label class="body-label">vs prev 30 days</label>
             </div>
         </div>
-        <div class="col-md-3 stat-container bg-white">
+        <div class="col-md-3 stat-container bg-white shadow-sm">
             <div class="stat-card-header m-3">
                 <label>Trial Win Rate</label>
             </div>
@@ -40,7 +40,7 @@
                 <label class="body-label">vs prev 30 days</label>
             </div>
         </div>
-        <div class="col-md-3 stat-container bg-white">
+        <div class="col-md-3 stat-container bg-white shadow-sm">
             <div class="stat-card-header m-3">
                 <label>New MRR</label>
             </div>
@@ -54,7 +54,7 @@
                 <label class="body-label">vs prev 30 days</label>
             </div>
         </div>
-        <div class="col-md-3 stat-container bg-white">
+        <div class="col-md-3 stat-container bg-white shadow-sm">
             <div class="stat-card-header m-3">
                 <label>Page Views</label>
             </div>
@@ -66,7 +66,7 @@
 
     <!-- Stat Charts-->
     <div class="row px-5 mt-3 mb-5 d-flex g-2 ">
-        <div class="col-md-6 chart-container bg-white">
+        <div class="col-md-6 chart-container bg-white shadow-sm">
             <div class="char-card-header m-3">
                 <label>MRR Stats By Country</label>
                 <app-bubble-chart [bubbleData]="this.bubbleData"></app-bubble-chart>
@@ -74,25 +74,29 @@
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="legend-containe mx-0 px-0 d-flex align-items-center">
                     <div class="col country mx-0 px-0 d-flex align-items-center">
-                    <span class="circle-b"></span>
-                    <label>United States</label>
+                        <span class="circle-b us"></span>
+                        <label>United States</label>
                     </div>
                     <div class="col country mx-0 px-0 d-flex align-items-center">
-                    <span class="circle-b"></span>
-                    <label>Australia</label>
+                        <span class="circle-b aus"></span>
+                        <label>Australia</label>
                     </div>
                     <div class="col country mx-0 px-0 d-flex align-items-center">
-                    <span class="circle-b"></span>
-                    <label>Canada</label>
+                        <span class="circle-b can"></span>
+                        <label>Canada</label>
                     </div>
                     <div class="col country mx-0 px-0 d-flex align-items-center">
-                    <span class="circle-b"></span>
-                    <label>United Kingdom</label>
+                        <span class="circle-b uk"></span>
+                        <label>United Kingdom</label>
+                    </div>
+                    <div class="col country mx-0 px-0 d-flex align-items-center">
+                        <span class="circle-b fr"></span>
+                        <label>France</label>
                     </div>
                 </div>
               </div>
         </div>
-        <div class="col-md-6 chart-container bg-white">
+        <div class="col-md-6 chart-container bg-white shadow-sm">
             <div class="char-card-header m-3">
                 <label>MRR</label>
             </div>
